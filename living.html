@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DATA-BIM Living</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-watermark"><img src="assets/logo-mark.jpeg" alt=""></div>
+
+<header>
+  <div class="nav wrap">
+    <a class="brand" href="index.html"><img src="assets/logo-mark.jpeg" alt="DATA.BIM logo"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="portafolio.html">Portafolio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="living.html" class="active">DATA-BIM Living</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="brand-word" href="index.html"><img src="assets/logo-wordmark.jpeg" alt="DATA.BIM"></a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="circuit-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow">Línea residencial</div>
+    <h1>DATA-BIM <em>Living.</em></h1>
+    <p class="page-sub">Nuestra línea de remodelación residencial: escaneo de espacios, diseño paramétrico y visualización con IA para proyectos de casa habitación.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="services">
+      <div class="service">
+        <span class="tag">Captura</span>
+        <h3>Escaneo del espacio</h3>
+        <p>Levantamiento con LiDAR y fotogrametría para obtener un modelo 3D preciso de tu espacio actual.</p>
+      </div>
+      <div class="service">
+        <span class="tag">Diseño</span>
+        <h3>Modelado paramétrico</h3>
+        <p>Exploración de opciones de remodelación sobre el modelo real de tu espacio, con ajustes rápidos.</p>
+      </div>
+      <div class="service">
+        <span class="tag">Visualización</span>
+        <h3>Render con IA</h3>
+        <p>Visualizaciones realistas del resultado final antes de iniciar obra, para decidir con confianza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">—</span>
+      <div>
+        <div class="sec-title">¿Tienes un espacio en mente?</div>
+        <p class="sec-desc">Cuéntanos qué quieres transformar y te mostramos cómo se vería.</p>
+      </div>
+    </div>
+    <a href="contacto.html" class="btn btn-primary">Escríbenos →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-wrap">
+    <span>© 2026 DATA-BIM Living</span>
+    <span>Monterrey, México</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>

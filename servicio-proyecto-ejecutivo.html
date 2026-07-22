@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Ejecutivo — DATA.BIM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-watermark"><img src="assets/logo-mark.jpeg" alt=""></div>
+
+<header>
+  <div class="nav wrap">
+    <a class="brand" href="index.html"><img src="assets/logo-mark.jpeg" alt="DATA.BIM logo"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" class="active">Servicios</a>
+      <a href="portafolio.html">Portafolio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="living.html">DATA-BIM Living</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="brand-word" href="index.html"><img src="assets/logo-wordmark.jpeg" alt="DATA.BIM"></a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="circuit-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow">Servicio 05 — <a href="servicios.html" style="color:var(--gold);">← Servicios</a></div>
+    <h1>Proyecto <em>Ejecutivo.</em></h1>
+    <p class="page-sub">Realizamos el desarrollo y acompañamiento de las fases avanzadas de proyecto: desarrollo de diseño y desarrollo de documentos de construcción de las distintas disciplinas. Aseguramos la generación de planos y documentos constructivos de arquitectura, estructura e ingenierías. Nuestros ingenieros especializados y arquitectos brindan soluciones técnicas para la coordinación de proyecto y soluciones constructivas que permitan la entrega en tiempo y forma del proyecto.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">—</span>
+      <div>
+        <div class="sec-title">Galería del servicio</div>
+      </div>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="peGalleryTrack">
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/1.jpg" alt="Proyecto Ejecutivo 1"></div>
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/2.jpg" alt="Proyecto Ejecutivo 2"></div>
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/3.jpg" alt="Proyecto Ejecutivo 3"></div>
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/4.jpg" alt="Proyecto Ejecutivo 4"></div>
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/5.jpg" alt="Sistemas constructivos 1"></div>
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/6.jpg" alt="Sistemas constructivos 2"></div>
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/7.jpg" alt="Sistemas constructivos 3"></div>
+        <div class="carousel-item"><img src="assets/servicios/proyecto-ejecutivo/gallery/8.jpg" alt="Sistemas constructivos 4"></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="pePrev" aria-label="Anterior">←</button>
+        <button class="carousel-btn" id="peNext" aria-label="Siguiente">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <div>
+        <div class="sec-title">Productos de este servicio</div>
+        <p class="sec-desc">Tres productos que conforman el servicio de Proyecto Ejecutivo.</p>
+      </div>
+    </div>
+
+    <div class="product-block product-noimg">
+      <span class="product-num">Producto 01</span>
+      <h3>Planos arquitectónicos</h3>
+      <p>Desarrollamos planos, documentación técnica, detalles constructivos, especificaciones y catálogos de conceptos de acabados, albañilerías, fachadas, cubiertas, exteriores / civil / terracerías, albercas, espacios a detalle, interiorismo y cancelerías.</p>
+    </div>
+
+    <div class="product-block product-noimg">
+      <span class="product-num">Producto 02</span>
+      <h3>Coordinación y documentación MEP</h3>
+      <p>Especialistas en HVAC, protección contra incendio, hidrosanitarias y especiales, así como la coordinación técnica y funcional de las especialidades eléctricas. Desarrollamos documentación, memorias técnicas y especificaciones.</p>
+    </div>
+
+    <div class="product-block product-noimg">
+      <span class="product-num">Producto 03</span>
+      <h3>Coordinación y documentación Estructural</h3>
+      <p>Traducimos memorias de cálculo y modelos matemáticos en ingeniería básica y a detalle. Generamos detalles constructivos, planos de taller y montaje.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">—</span>
+      <div>
+        <div class="sec-title">¿Listo para empezar?</div>
+        <p class="sec-desc">Agenda un diagnóstico inicial sin costo y define el alcance con nosotros.</p>
+      </div>
+    </div>
+    <a href="contacto.html" class="btn btn-primary">Agendar diagnóstico →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-wrap">
+    <span>© 2026 DATA.BIM</span>
+    <span>Monterrey, México</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const track = document.getElementById('peGalleryTrack');
+  const prevBtn = document.getElementById('pePrev');
+  const nextBtn = document.getElementById('peNext');
+  if(track && prevBtn && nextBtn){
+    const scrollAmount = () => track.querySelector('.carousel-item').offsetWidth + 14;
+    prevBtn.addEventListener('click', () => track.scrollBy({left:-scrollAmount(), behavior:'smooth'}));
+    nextBtn.addEventListener('click', () => track.scrollBy({left:scrollAmount(), behavior:'smooth'}));
+  }
+
+  document.querySelectorAll('.auto-carousel').forEach(carousel => {
+    const imgs = carousel.querySelectorAll('img');
+    if(imgs.length < 2) return;
+    let i = 0;
+    setInterval(() => {
+      imgs[i].classList.remove('active');
+      i = (i + 1) % imgs.length;
+      imgs[i].classList.add('active');
+    }, 1600);
+  });
+</script>
+</body>
+</html>
