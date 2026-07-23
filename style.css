@@ -517,3 +517,44 @@ footer{background:var(--bg-alt); color:var(--text-dim); padding:22px 0; font-fam
   text-transform:uppercase; letter-spacing:0.04em; display:block; margin-bottom:10px;
 }
 .ai-chip-note{color:var(--text-dim); font-size:0.85rem; margin-top:8px; font-style:italic;}
+
+/* ---------- ANALÍTICA E INTELIGENCIA DE OBRA (CV) PAGE ---------- */
+.cv-room-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(90px, 1fr)); gap:8px; margin:32px 0;}
+.cv-room{
+  aspect-ratio:1; border:1px solid var(--line); background:var(--bg-alt);
+  display:flex; align-items:center; justify-content:center; position:relative;
+  font-family:'IBM Plex Mono', monospace; font-size:0.7rem; color:var(--text-dim);
+}
+.cv-room::before{
+  content:""; position:absolute; top:6px; right:6px; width:7px; height:7px; border-radius:50%;
+}
+.cv-room.ok::before{background:#5FBF7A;}
+.cv-room.warn::before{background:var(--gold);}
+.cv-room.alert::before{background:#C9503E;}
+.cv-legend{display:flex; gap:22px; flex-wrap:wrap; margin-top:6px; font-size:0.82rem; color:var(--text-dim);}
+.cv-legend span{display:inline-flex; align-items:center; gap:8px;}
+.cv-legend .dot{width:8px; height:8px; border-radius:50%; display:inline-block;}
+.cv-legend .dot.ok{background:#5FBF7A;}
+.cv-legend .dot.warn{background:var(--gold);}
+.cv-legend .dot.alert{background:#C9503E;}
+
+.cv-compare{
+  display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--line); overflow:hidden;
+  margin:32px 0;
+}
+@media (max-width:700px){.cv-compare{grid-template-columns:1fr;}}
+.cv-compare-panel{padding:28px 24px; position:relative;}
+.cv-compare-panel:first-child{border-right:1px solid var(--line);}
+@media (max-width:700px){.cv-compare-panel:first-child{border-right:none; border-bottom:1px solid var(--line);}}
+.cv-compare-tag{
+  font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--gold);
+  text-transform:uppercase; letter-spacing:0.05em; display:block; margin-bottom:14px;
+}
+.cv-compare-panel ul{list-style:none;}
+.cv-compare-panel li{color:var(--text-dim); font-size:0.9rem; padding:6px 0;}
+.cv-compare-panel.after li{color:var(--text);}
+
+.cv-note{
+  border:1px dashed var(--line); padding:16px 20px; color:var(--text-dim); font-size:0.85rem;
+  margin-top:18px; font-style:italic;
+}
